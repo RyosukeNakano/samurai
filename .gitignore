@@ -1,0 +1,8 @@
+rails/log/*
+rails/tmp/*
+
+/rails/log/*
+/rails/tmp/*
+
+/log/*.log
+/tmp

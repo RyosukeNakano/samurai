@@ -1,0 +1,36 @@
+@charset "utr-8";
+body{
+    font-family: "ＭＳ　ゴシック", sans-serif;                       /*フォントをmsゴシックに*/
+    line-height: 0.25;                                              /*行高を0.25倍に*/
+    color: #000000;                                               /*文字色をblackにする*/
+}
+#menu li{
+    list-style-type:none;                                           /*リストマーカー削除*/
+}
+.btn {
+    display:  inline-block;
+    color: rgb(0, 120, 255);
+    text-decoration:  none;
+    background-color: #ffffff;
+    border-radius: 5px;
+    position:  relative;
+    height: 50px;
+    width: 50px;
+    cursor:pointer;
+}
+
+.btn::before {
+    content:  '';
+    width: 20px;
+    height: 20px;
+    display:  block;
+    border-top: solid 2px;
+    border-right: solid 2px;
+    transform: rotate(-45deg);
+    position:  absolute;
+    top: 10px;
+    bottom:  0;
+    left:  0;
+    right:  0;
+    margin:  auto;
+}
