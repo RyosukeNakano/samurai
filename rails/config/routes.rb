@@ -1,21 +1,22 @@
 Rails.application.routes.draw do
   resources :posts
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-   #ルートurlはpostsコントローラーのindexを呼んでください
+   #ルートurl　＝＞　コントローラーのindex
   root to: "posts#index"
-  get 'access',to: 'access#show'
-  get 'staff',to: 'staff#show'
-  get 'voice',to: 'voice#show'
-  get 'inquiry',to: 'inquiry#show'
-  get 'greetings',to: 'greetings#show'
+  get 'access',to: 'access#index'
+  get 'staff',to: 'staff#index'
+  get 'voice',to: 'voice#index'
+  get 'inquiry',to: 'inquiry#index'
+  get 'greetings',to: 'greetings#index'
   get 'menu',to: 'menu#index'
-  get 'quality',to: 'quality#show'
-  get 'about',to: 'about#show'
-  get 'plan',to: 'plan#show'
-  get 'delivery',to: 'delivery#show'
-  get 'recruit',to: 'recruit#show'
-  get 'policy',to: 'policy#show'
-  get 'sitemap',to: 'sitemap#show'
-  get 'login',to: 'login#show'
-  get 'ads',to: 'ads#show'
+  get 'quality',to: 'quality#index'
+  get 'about',to: 'about#index'
+  get 'plan',to: 'plan#index'
+  get 'delivery',to: 'delivery#index'
+  get 'recruit',to: 'recruit#index'
+  get 'policy',to: 'policy#index'
+  get 'sitemap',to: 'sitemap#index'
+  get 'login',to: 'login#index'
+  get 'ads',to: 'ads#index'
+  root to: "home#index"
 end
