@@ -1,6 +1,16 @@
-<!--  Menuの中に /nigiri(おまかせ) /alacarte(一品料理) /drink(お飲物) を設置 -->
-<!--  同一ページ内で表示移行させるか検討… -->
-
-<h1>Menu</h1>
-<!-- この一行でDishの一覧を表示 -->
-<%= render @dishes %>
+<div id="content">
+ <div id="path">
+ <a href="http://localhost:3000/home">HOME</a>
+ </div>
+ <div id="menu">
+  <h2>おしながき：おまかせ</h2>
+  <div id="categoryNavigation">
+   <li><strong>おまかせ</strong></li>
+   <li><a href="http://localhost:3000/nigiri">にぎり</a></li>
+   <li><a href="http://localhost:3000/alacarte">一品料理</a></li>
+   <li><a href="http://localhost:3000/drink">お飲み物</a></li>
+  </div>
+ </div>
+ <%= render @dishes %>
+ <h4>a</h4>
+</div>

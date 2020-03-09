@@ -1,24 +1,25 @@
 <header class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-  <%= link_to 'Simple Board', :posts, class: "navbar-brand" %>
+  <%= link_to '山沙商店 すし芳', :posts, class: "navbar-brand" %>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
+  <div class="container">
+  <div class="row">
+    <div class="col-sm">
+    <a href="http://localhost:3000/access" title="交通アクセス">交通アクセス</a>
+    </div>
+    <div class="col-sm">
+    <a href="http://localhost:3000/staff" title="スタッフ紹介">スタッフ紹介</a>
+    </div>
+    <div class="col-sm">
+    <a href="http://localhost:3000/voice" title="お客様の声">お客様の声</a>
+    </div>
+    <div class="col-sm">
+    <a href="http://localhost:3000/inquiry" title="お問い合わせ">お問い合わせ</a>
+    </div>
+</div>
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
    <ul class="navbar-nav ml-auto">
-// もしユーザーがログインしているならば下記を表示
-    <%  if user_signed_in?  %>
-      <li class="nav-item">
-        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
-      </li>
-//ログインしていないのなら下記を表示
-    <% else %>
-      <li class="nav-item">
-        <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
-      </li>
-      <li class="nav-item">
-        <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
-      </li>
-    <% end %>
    </ul>
   </div>
 </header>

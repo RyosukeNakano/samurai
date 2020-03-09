@@ -1,14 +1,20 @@
-class DeliveryController < ApplicationController
+# frozen_string_literal: true
 
-  # GET /delivery
-  # GET /delivery.json
+class DeliceryController < ApplicationController
+  # before_action :set_dishes, only: [:show, :edit, :update, :destroy]
+
+  # GET /menu
+  # GET /menu.json
   def index
-    # @posts = Post.all
+    @deliveries = Delivery.all
   end
-  
-  # GET /posts/1
-  # GET /posts/1.json
-  def show
+  def indexmorikomi
+    @morikomis = Morikomi.all
   end
-
+  def indexsushi
+    @sushis = Sushi.all
+  end
+  def indexother
+    @others = Other.all
+  end
 end
