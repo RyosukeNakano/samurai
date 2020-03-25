@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Thought < ApplicationRecord
+class Voice < ApplicationRecord
   #   validates :title, presence: true
   #   validates :detail, presence: true
   #   validates :price, presence: true

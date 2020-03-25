@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Introduction < ApplicationRecord
+class Staff < ApplicationRecord
   #   validates :title, presence: true
   #   validates :detail, presence: true
   #   validates :price, presence: true

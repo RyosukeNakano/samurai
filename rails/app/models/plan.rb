@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class Special < ApplicationRecord
+class Plan < ApplicationRecord
   #   validates :title, presence: true
   #   validates :detail, presence: true
   #   validates :price, presence: true

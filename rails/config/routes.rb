@@ -35,4 +35,9 @@ Rails.application.routes.draw do
   get "login", to: "login#index"
   get "ads", to: "ads#index"
   # root to: "home#index"
+
+  # namespace 'admin' do
+  #   post    'login',   to: 'sessions#create'
+  #   delete  'logout',  to:
+  # end
 end

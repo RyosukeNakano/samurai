@@ -2,12 +2,49 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// header
+div#headerNavi {
+  margin: 8px auto 7px auto;
+  padding: 0 0 0 546px;
+  width: 393px;
+}
+div#headerNavi ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+div#headerNavi ul li {
+  float: left;
+}
+div#headerNavi ul li a {
+  height: 15px;
+  text-indent: -9999px;
+  display: block;
+}
+div#headerNavi ul li.alpha a {
+  width: 100px;
+  border-left: solid 1px #434343;
+  background: url(../images/common/headerNavi.gif) 0 0 no-repeat;
+}
+div#headerNavi ul li.beta a {
+  width: 98px;
+  background: url(../images/common/headerNavi.gif) -100px 0 no-repeat;
+}
+div#headerNavi ul li.gamma a {
+  width: 91px;
+  background: url(../images/common/headerNavi.gif) -198px 0 no-repeat;
+}
+div#headerNavi ul li.delta a {
+  width: 103px;
+  background: url(../images/common/headerNavi.gif) -289px 0 no-repeat;
+}
+
 h4 {
-    text-align: left;
-    font-weight: bold;
-    padding: 5px 5px 5px 15px;
-    font-size: 12px;
-    margin: -7px -7px 0;
-    background-color: #000000;
-    color: #fff;
-  }
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px -7px 0;
+  background-color: hsl(0, 0%, 0%);
+  color: #fff;
+}

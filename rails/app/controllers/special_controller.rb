@@ -3,6 +3,6 @@
 class SpecialController < ApplicationController
   # before_action :set_dishes, only: [:show, :edit, :update, :destroy]
   def index
-    @specials = Special.all
+    @plans = Plan.all
   end
 end

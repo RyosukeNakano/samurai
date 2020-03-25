@@ -82,7 +82,7 @@ class CreateDishes < ActiveRecord::Migration[5.2]
       t.datetime :created_at, null: false
       t.datetime :updated_at, null: false
     end
-    create_table "introductions", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    create_table "staffs", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
       t.string :title
       t.string :detail
       t.string :price
@@ -92,7 +92,7 @@ class CreateDishes < ActiveRecord::Migration[5.2]
       t.datetime :created_at, null: false
       t.datetime :updated_at, null: false
     end
-    create_table "thoughts", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    create_table "voices", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
       t.string :title
       t.string :detail
       t.string :price
@@ -102,7 +102,7 @@ class CreateDishes < ActiveRecord::Migration[5.2]
       t.datetime :created_at, null: false
       t.datetime :updated_at, null: false
     end
-    create_table "specials", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    create_table "plans", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
       t.string :title
       t.string :detail
       t.string :price
@@ -111,6 +111,10 @@ class CreateDishes < ActiveRecord::Migration[5.2]
       t.string :image
       t.datetime :created_at, null: false
       t.datetime :updated_at, null: false
+    end
+    create_table "user", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+      t.string :id
+      t.string :password
     end
   end
 end
