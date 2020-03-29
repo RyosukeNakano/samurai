@@ -3,6 +3,6 @@
 class IntroductionController < ApplicationController
   # before_action :set_dishes, only: [:show, :edit, :update, :destroy]
   def index
-    @staff = Staff.all
+    @staffs = Staff.all
   end
 end

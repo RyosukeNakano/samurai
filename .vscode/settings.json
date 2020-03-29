@@ -1,0 +1,13 @@
+{
+    "editor.formatOnSave": true,
+    "beautify.language": {
+        "html": [
+            "htm",
+            "html",
+            "erb"
+        ]
+    },
+    "files.associations": {
+        "*.html.erb": "html"
+    }
+}

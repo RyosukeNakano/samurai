@@ -1,9 +1,71 @@
 @import "bootstrap";
 
-@import "forms";
-@import "devise";
+/* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
+	Individual Settings
+=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
+div#mainArea {
+  border-top: solid 1px #434343;
+  background: url() repeat-x;
+}
 
-@charset "UTF-8";
+div#mainArea h1 {
+  margin: 0;
+  padding: 0;
+  height: 351px;
+  background: url() center no-repeat;
+  text-indent: -9999px;
+}
+
+div#mainArea h1 {
+  background: url() center no-repeat;
+}
+
+h2 {
+  margin: 9px 0 15px 0;
+  padding: 0;
+  height: 36px;
+  background: url() no-repeat;
+  text-indent: -9999px;
+}
+
+h2#hitokoto {
+  background: url() no-repeat;
+}
+
+p.hitokoto {
+  margin: 0 0 2em 0;
+  padding: 0;
+  font-size: 78%;
+}
+
+dl#information {
+  margin: 0 5px;
+  padding: 0;
+}
+
+dl#information dt {
+  margin: 0;
+  padding: 0 0 1em 0;
+  width: 6.2em;
+  font-size: 78%;
+  float: left;
+  clear: both;
+}
+
+dl#information dd {
+  margin: 0 0 0 6.2em;
+  padding: 0 0 1em 0;
+  font-size: 78%;
+}
+
+div#content iframe {
+  background: #fff;
+}
+
+/*
+div#content img { display: none; }
+h2#hitokoto, p.hitokoto { display: none; }
+*/
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	General Settings
@@ -17,32 +79,40 @@ body {
   line-height: 1.5;
   text-align: center;
 }
+
 img {
   border: 0;
   -ms-interpolation-mode: bicubic;
 }
+
 form {
   margin: 0;
   padding: 0;
 }
+
 a {
   outline: none;
 }
+
 a:link {
   color: #ccc;
   text-decoration: underline;
 }
+
 a:visited {
   color: #ccc;
   text-decoration: underline;
 }
+
 a:hover {
   color: #eee;
   text-decoration: none;
 }
+
 .clear {
-  /zoom: 1;
+  zoom: 1;
 }
+
 .clear:after {
   content: "";
   display: block;
@@ -54,6 +124,7 @@ a:hover {
   margin: 15px 0 0 0;
   float: right;
 }
+
 /*.top_link a { height: 20px; text-indent: -9999px; display: block; }*/
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
@@ -64,36 +135,44 @@ div#headerNavi {
   padding: 0 0 0 546px;
   width: 393px;
 }
+
 div#headerNavi ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 div#headerNavi ul li {
   float: left;
 }
+
 div#headerNavi ul li a {
   height: 15px;
   text-indent: -9999px;
   display: block;
 }
+
 div#headerNavi ul li.alpha a {
   width: 100px;
   border-left: solid 1px #434343;
   background: url(../images/common/headerNavi.gif) 0 0 no-repeat;
 }
+
 div#headerNavi ul li.beta a {
   width: 98px;
   background: url(../images/common/headerNavi.gif) -100px 0 no-repeat;
 }
+
 div#headerNavi ul li.gamma a {
   width: 91px;
   background: url(../images/common/headerNavi.gif) -198px 0 no-repeat;
 }
+
 div#headerNavi ul li.delta a {
   width: 103px;
   background: url(../images/common/headerNavi.gif) -289px 0 no-repeat;
 }
+
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	Global Navigation
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -102,6 +181,7 @@ div#globalNavi {
   border-bottom: solid 1px #434343;
   background: url(../images/common/globalNaviBack.gif) center no-repeat;
 }
+
 div#globalNavi div.inner {
   margin: 0 auto;
   padding: 0 1px;
@@ -109,72 +189,90 @@ div#globalNavi div.inner {
   height: 51px;
   background: url(../images/common/globalNaviLine.gif) center no-repeat;
 }
+
 div#globalNavi div.inner ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 div#globalNavi div.inner ul li {
   font-size: 1px;
   float: left;
 }
+
 div#globalNavi div.inner ul li a {
   height: 51px;
   text-indent: -9999px;
   display: block;
 }
+
 div#globalNavi div.inner ul li.alpha a {
   width: 188px;
   background: url(../images/common/globalNavi.gif) 0 0 no-repeat;
 }
+
 div#globalNavi div.inner ul li.alpha a:visited {
   width: 188px;
   background: url(../images/common/globalNavi.gif) 0 0 no-repeat;
 }
+
 div#globalNavi div.inner ul li.alpha a:hover {
   background: url(../images/common/globalNavi.gif) 0 -51px no-repeat;
 }
+
 div#globalNavi div.inner ul li.beta a {
   width: 188px;
   background: url(../images/common/globalNavi.gif) -188px 0 no-repeat;
 }
+
 div#globalNavi div.inner ul li.beta a:visited {
   width: 188px;
   background: url(../images/common/globalNavi.gif) -188px 0 no-repeat;
 }
+
 div#globalNavi div.inner ul li.beta a:hover {
   background: url(../images/common/globalNavi.gif) -188px -51px no-repeat;
 }
+
 div#globalNavi div.inner ul li.gamma a {
   width: 188px;
   background: url(../images/common/globalNavi.gif) -376px 0 no-repeat;
 }
+
 div#globalNavi div.inner ul li.gamma a:visited {
   width: 188px;
   background: url(../images/common/globalNavi.gif) -376px 0 no-repeat;
 }
+
 div#globalNavi div.inner ul li.gamma a:hover {
   background: url(../images/common/globalNavi.gif) -376px -51px no-repeat;
 }
+
 div#globalNavi div.inner ul li.delta a {
   width: 188px;
   background: url(../images/common/globalNavi.gif) -564px 0 no-repeat;
 }
+
 div#globalNavi div.inner ul li.delta a:visited {
   width: 188px;
   background: url(../images/common/globalNavi.gif) -564px 0 no-repeat;
 }
+
 div#globalNavi div.inner ul li.delta a:hover {
   background: url(../images/common/globalNavi.gif) -564px -51px no-repeat;
 }
+
 div#globalNavi div.inner ul li.epsilon a {
   width: 186px;
   background: url(../images/common/globalNavi.gif) -752px 0 no-repeat;
 }
+
 div#globalNavi div.inner ul li.epsilon a:visited {
   width: 186px;
   background: url(../images/common/globalNavi.gif) -752px 0 no-repeat;
 }
+
 div#globalNavi div.inner ul li.epsilon a:hover {
   background: url(../images/common/globalNavi.gif) -752px -51px no-repeat;
 }
@@ -184,43 +282,51 @@ div#globalNavi ul#primary {
   padding: 0;
   list-style: none;
 }
+
 /*div#globalNavi ul#primary li a:hover { filter: alpha(opacity=80); -moz-opacity:0.80; opacity:0.80; }*/
 div#globalNavi ul#primary li {
   height: 51px;
   float: left;
 }
+
 div#globalNavi ul#secondary01 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 div#globalNavi ul#secondary01 li {
   height: 30px;
   float: none;
   position: relative;
   z-index: 1;
 }
+
 div#globalNavi ul#secondary01 a {
   background: none !important;
   height: 20px !important;
   text-indent: 0px !important;
 }
+
 div#globalNavi ul#secondary02 {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 div#globalNavi ul#secondary02 li {
   height: 30px;
   float: none;
   position: relative;
   z-index: 1;
 }
+
 div#globalNavi ul#secondary02 a {
   background: none !important;
   height: 20px !important;
   text-indent: 0px !important;
 }
+
 div#globalNavi ul#tertiary02 {
   margin: 0;
   padding: 0;
@@ -231,6 +337,7 @@ div#globalNavi ul#tertiary02 {
   left: 188px;
   z-index: 2;
 }
+
 div#globalNavi ul#tertiary02 li {
   height: 30px;
   float: none;
@@ -244,10 +351,12 @@ div#contents {
   border-bottom: solid 1px #262626;
   background: #191919 url(../images/common/contents.gif) repeat-x;
 }
+
 div#contentsInner {
   margin: 0 auto;
   width: 940px;
 }
+
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	Content
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -257,10 +366,12 @@ div#content {
   text-align: left;
   float: left;
 }
+
 div#content div#path {
   margin: 0 0 2em 0;
   font-size: 72%;
 }
+
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	Side Alpha
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -269,40 +380,49 @@ div#sideAlpha {
   text-align: left;
   float: left;
 }
+
 div#sideAlpha ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 div#sideAlpha ul li {
   margin: 0 0 6px 0;
   font-size: 1px;
 }
+
 div#sideAlpha ul li a {
   height: 90px;
   text-indent: -9999px;
   display: block;
 }
+
 div#sideAlpha ul li.alpha a {
   width: 210px;
   background: url(../images/common/sideAlpha01.jpg) 0 0 no-repeat;
 }
+
 div#sideAlpha ul li.beta a {
   width: 210px;
   background: url(../images/common/sideAlpha02.jpg) 0 0 no-repeat;
 }
+
 div#sideAlpha ul li.gamma a {
   width: 210px;
   background: url(../images/common/sideAlpha03.jpg) 0 0 no-repeat;
 }
+
 div#sideAlpha ul li.delta a {
   width: 210px;
   background: url(../images/common/sideAlpha04.jpg) 0 0 no-repeat;
 }
+
 div#sideAlpha ul li.epsilon a {
   width: 210px;
   background: url(../images/common/sideAlpha05.jpg) 0 0 no-repeat;
 }
+
 div#sideAlpha ul li.zeta {
   width: 210px;
   height: 162px;
@@ -310,6 +430,7 @@ div#sideAlpha ul li.zeta {
   text-indent: -9999px;
   display: block;
 }
+
 div#sideAlpha ul li.eta a {
   width: 210px;
   height: 71px;
@@ -317,6 +438,7 @@ div#sideAlpha ul li.eta a {
   text-indent: -9999px;
   display: block;
 }
+
 div#sideAlpha ul li.theta a {
   width: 210px;
   height: 71px;
@@ -324,6 +446,7 @@ div#sideAlpha ul li.theta a {
   text-indent: -9999px;
   display: block;
 }
+
 div#sideAlpha ul li.iota a {
   width: 210px;
   height: 36px;
@@ -331,12 +454,14 @@ div#sideAlpha ul li.iota a {
   text-indent: -9999px;
   display: block;
 }
+
 div#sideAlpha ul li.close {
   margin: 10px 0;
   padding: 0 5px;
   width: 200px;
   font-size: 78%;
 }
+
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	Side Beta
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -346,17 +471,21 @@ div#sideBeta {
   text-align: left;
   float: left;
 }
+
 div#sideBeta ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 div#sideBeta ul li {
   margin: 0 0 13px 0;
 }
+
 div#sideBeta ul li img {
   vertical-align: top;
 }
+
 div#sideBeta ul li.alpha {
   width: 210px;
   height: 148px;
@@ -364,6 +493,7 @@ div#sideBeta ul li.alpha {
   text-indent: -9999px;
   display: block;
 }
+
 div#sideBeta ul li.beta a {
   width: 210px;
   height: 71px;
@@ -371,6 +501,7 @@ div#sideBeta ul li.beta a {
   text-indent: -9999px;
   display: block;
 }
+
 div#sideBeta ul li.gamma a {
   width: 210px;
   height: 71px;
@@ -378,6 +509,7 @@ div#sideBeta ul li.gamma a {
   text-indent: -9999px;
   display: block;
 }
+
 div#sideBeta ul li.delta a {
   width: 210px;
   height: 36px;
@@ -385,6 +517,7 @@ div#sideBeta ul li.delta a {
   text-indent: -9999px;
   display: block;
 }
+
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	Global Footer
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
@@ -395,16 +528,19 @@ div#globalFooter {
   color: #848484;
   text-align: left;
 }
+
 div#globalFooter dl {
   margin: 0;
   padding: 0;
 }
+
 div#globalFooter dl dt {
   margin: 0;
   padding: 0;
   width: 115px;
   float: left;
 }
+
 div#globalFooter dl dt a {
   width: 91px;
   height: 53px;
@@ -412,54 +548,68 @@ div#globalFooter dl dt a {
   text-indent: -9999px;
   display: block;
 }
+
 div#globalFooter dl dd {
   margin: 0;
   padding: 0;
   float: left;
 }
+
 div#globalFooter dl dd.alpha {
   padding: 5px 0 0 0;
   width: 553px;
   font-size: 70%;
 }
+
 div#globalFooter dl dd.beta {
   width: 272px;
   font-size: 65%;
 }
+
 div#globalFooter dl dd.beta ul {
   margin: 0;
   padding: 0;
   list-style: none;
 }
+
 div#globalFooter dl dd.beta ul li {
   text-indent: -9999px;
   float: left;
 }
+
 div#globalFooter dl dd.beta ul li a {
   height: 11px;
   text-indent: -9999px;
   display: block;
 }
+
 div#globalFooter dl dd.beta ul li.alpha {
+  padding: 0 0 0 26px;
 }
+
 div#globalFooter dl dd.beta ul li.alpha a {
   width: 57px;
   background: url(../images/common/footerNavi.gif) 0 0 no-repeat;
 }
+
 div#globalFooter dl dd.beta ul li.beta {
   padding: 0 0 0 26px;
 }
+
 div#globalFooter dl dd.beta ul li.beta a {
   width: 86px;
   background: url(../images/common/footerNavi.gif) -83px 0 no-repeat;
 }
+
 div#globalFooter dl dd.beta ul li.gamma {
   padding: 0 0 0 26px;
 }
+
 div#globalFooter dl dd.beta ul li.gamma a {
   width: 77px;
   background: url(../images/common/footerNavi.gif) -195px 0 no-repeat;
 }
+
 div#globalFooter dl dd.beta p {
   margin: 29px 2px 0 0;
   padding: 0;
@@ -477,10 +627,12 @@ div#globalFooter dl dd.beta p {
   text-align: center;
   line-height: 0;
 }
+
 #lightbox img {
   width: auto;
   height: auto;
 }
+
 #lightbox a img {
   border: none;
 }
@@ -492,6 +644,7 @@ div#globalFooter dl dd.beta p {
   height: 250px;
   margin: 0 auto;
 }
+
 #imageContainer {
   padding: 10px;
 }
@@ -505,6 +658,7 @@ div#globalFooter dl dd.beta p {
   text-align: center;
   line-height: 0;
 }
+
 #hoverNav {
   position: absolute;
   top: 0;
@@ -513,9 +667,11 @@ div#globalFooter dl dd.beta p {
   width: 100%;
   z-index: 10;
 }
-#imageContainer > #hoverNav {
+
+#imageContainer>#hoverNav {
   left: 0;
 }
+
 #hoverNav a {
   outline: none;
 }
@@ -524,21 +680,26 @@ div#globalFooter dl dd.beta p {
 #nextLink {
   width: 49%;
   height: 100%;
-  background-image: url(data:image/gif;base64,AAAA); /* Trick IE into showing hover */
+  background-image: url(data:image/gif;base64,AAAA);
+  /* Trick IE into showing hover */
   display: block;
 }
+
 #prevLink {
   left: 0;
   float: left;
 }
+
 #nextLink {
   right: 0;
   float: right;
 }
+
 #prevLink:hover,
 #prevLink:visited:hover {
   background: url(../images/lightbox/prevlabel.gif) left 15% no-repeat;
 }
+
 #nextLink:hover,
 #nextLink:visited:hover {
   background: url(../images/lightbox/nextlabel.gif) right 15% no-repeat;
@@ -557,19 +718,23 @@ div#globalFooter dl dd.beta p {
   padding: 0 10px;
   color: #666;
 }
+
 #imageData #imageDetails {
   width: 70%;
   float: left;
   text-align: left;
 }
+
 #imageData #caption {
   font-weight: bold;
 }
+
 #imageData #numberDisplay {
   display: block;
   clear: left;
   padding-bottom: 1em;
 }
+
 #imageData #bottomNavClose {
   width: 66px;
   float: right;
