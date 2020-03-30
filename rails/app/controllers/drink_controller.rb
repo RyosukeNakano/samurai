@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class DrinkController < ApplicationController
-  def indexdrink
+  def index
     @drinks = Drink.all
   end
 end

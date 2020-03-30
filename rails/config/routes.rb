@@ -9,13 +9,17 @@ Rails.application.routes.draw do
   get "staff", to: "staff#index"
   get "voice", to: "voice#index"
   get "inquiry", to: "inquiry#index"
-  get "greetings", to: "greetings#index"
+  get "greeting", to: "greeting#index"
   get "menu", to: "menu#index"
+
+  get "nigiri",   to: "nigiri#index"
+  get  "alacarte",  to: "alacarte#index"
+  get  "drink",  to: "drink#index"
 
   namespace "menu" do
     get "nigiri",   to: "menu#indexnigiri"
-    get  "alacarte",  to: "menu#indexalacarte"
-    get  "drink",  to: "menu#indexdrink"
+    get "alacarte",  to: "menu#indexalacarte"
+    get "drink",  to: "menu#indexdrink"
   end
 
   get "quality", to: "quality#index"
@@ -25,8 +29,8 @@ Rails.application.routes.draw do
 
   namespace "delivery" do
     get "morikomi",   to: "delivery#indexmorikomi"
-    get  "sushi",  to: "delivery#indexsushi"
-    get  "other",  to: "delivery#indexother"
+    get "sushi",  to: "delivery#indexsushi"
+    get "other",  to: "delivery#indexother"
   end
 
   get "recruit", to: "recruit#index"
@@ -36,8 +40,8 @@ Rails.application.routes.draw do
   get "ads", to: "ads#index"
   # root to: "home#index"
 
-  # namespace 'admin' do
-  #   post    'login',   to: 'sessions#create'
-  #   delete  'logout',  to:
-  # end
+  namespace "admin" do
+    post    "login",   to: "sessions#create"
+    delete  "logout",  to: "sessions#destroy"
+  end
 end

@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class NigiriController < ApplicationController
-  def indexnigiri
+  def index
     @nigiris = Nigiri.all
   end
 end

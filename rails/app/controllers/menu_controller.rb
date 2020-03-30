@@ -7,13 +7,4 @@ class MenuController < ApplicationController
   def index
     @dishes = Dish.all
   end
-  def indexnigiri
-    @nigiris = Nigiri.all
-  end
-  def indexalacarte
-    @alacartes = Alacarte.all
-  end
-  def indexdrink
-    @drinks = Drink.all
-  end
 end

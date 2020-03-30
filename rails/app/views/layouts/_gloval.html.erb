@@ -1,0 +1,31 @@
+<main>
+  <div class="container">
+    <%= render "layouts/flash" %>
+    <div class="inner">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" href="http://localhost:3000/greeting" title="ごあいさつ">ごあいさつ</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="http://localhost:3000/menu" title="おしながき"
+            role="button" aria-haspopup="true" aria-expanded="false">おしながき</a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="http://localhost:3000/menu" title="おまかせ">おまかせ</a>
+            <a class="dropdown-item" href="http://localhost:3000/nigiri" title="にぎり">にぎり</a>
+            <a class="dropdown-item" href="http://localhost:3000/alacarte" title="一品料理">一品料理</a>
+            <a class="dropdown-item" href="http://localhost:3000/drink" title="お飲物">お飲物</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:3000/quality" title="当店のこだわり">当店のこだわり</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:3000/about" title="店内のご案内">店内のご案内</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="http://localhost:3000/plan" title="限定プラン">限定プラン</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>

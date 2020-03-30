@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 class AlacarteController < ApplicationController
-  def indexalacarte
+  def index
     @alacartes = Alacarte.all
   end
 end
