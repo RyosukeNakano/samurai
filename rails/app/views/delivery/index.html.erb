@@ -1,3 +1,137 @@
-<h1>Delivery</h1>
-<!-- この一行でDishの一覧を表示 -->
-<%= render @deliveries %>
+<div id="contentsInner" class="clear">
+    <div id="sideAlpha">
+        <!--
+        <div style="margin-bottom: 5px; "><a href="/plan/" title="限定プラン"><img src="http://www.sushiyoshi-yamasa.jp/images/common/plan_banner.gif" alt="ホームページ開設記念限定プランご紹介" width="210" height="100"></a></div>
+        -->
+        <ul>
+            <li class="alpha"><a href="/menu/" title="おしながき">おしながき</a></li>
+            <li class="beta"><a href="/quality/" title="当店のこだわり">当店のこだわり</a></li>
+            <li class="gamma"><a href="/about/" title="店内のご案内">店内のご案内</a></li>
+            <li class="delta"><a href="/delivery/" title="出前メニュー">出前メニュー</a></li>
+            <!--<li class="epsilon"><a href="/shopping/" title="お取り寄せ">お取り寄せ</a></li>
+            <li class="close"><img alt="店休日" src="../images/common/close.jpg" width="200" height="25" /><br />6/4(月)、6/11(月)、6/18(月)、6/25(月)</li>
+            -->
+            <li>
+                <img alt="お問い合わせはこちらから" src="/images/common/sideBeta00.gif" width="210" height="30">
+                <div
+                    style="margin: 0 0 15px 0; padding: 10px; width: 190px; background: #000; font-size: 12px !important;">
+                    <strong style="color: #d5c010; font-size: 24px; font-weight: 700; display: block;">
+                        <span style="margin: 0 0.1em 0 0; font-size: 20px;">☎</span>0952-20-1239
+                    </strong>
+                    店舗営業時間／18:00〜23:00<br>
+                    店休日／月曜日
+                </div>
+            </li>
+            <li class="zeta">山沙商店「すし芳」宅配専用ダイヤル TEL.0952-20-1238</li>
+            <li class="eta"><a href="/access/" title="交通アクセス">交通アクセス</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="path">
+            <a href="../">HOME</a> &gt; 出前のご案内
+        </div>
+        <div id="delivery">
+            <div class="toMenu">
+                <a href="./">出前メニューはこちら</a>
+            </div>
+            <h2>出前のご案内</h2>
+            <div class="clear"></div>
+            <div id="menu">
+                <h3>メニュー</h3>
+                <ul>
+                    <li><a href="./">一人前</a></li>
+                    <li><a href="./morikomi.html">盛込・盛り合せ寿司</a></li>
+                    <li><a href="./nigiri.html">単品</a></li>
+                    <li><a href="./other.html">その他</a></li>
+                </ul>
+            </div>
+            <br clear="both">
+            <div id="tel">
+                <h3>電話番号</h3>
+                <span>0952-20-1238</span> （宅配専用番号）<br>
+                ※ 2,500円よりお届けいたします
+            </div>
+            <div id="time">
+                <h3>営業時間</h3>
+                <table border="0" cellspacing="0" cellpadding="0" summary="宅配時間">
+                    <tbody>
+                        <tr>
+                            <th>平日</th>
+                            <td>17:00～21:30</td>
+                        </tr>
+                        <tr>
+                            <th>土日祝</th>
+                            <td>11:30～14:00,17:00～21:30</td>
+                        </tr>
+                        <tr>
+                            <th>定休日</th>
+                            <td>月曜日 （※ 祝日の場合、出前は営業します）</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id="area">
+                <h3>宅配地域</h3>
+                <!--
+                <div id="map"></div>
+                -->
+                <table border="0" cellspacing="0" cellpadding="0" summary="宅配可能な地域">
+                    <tbody>
+                        <tr>
+                            <th>あ</th>
+                            <td>愛敬町、赤松町、朝日町、伊勢町、今宿町、駅前中央1丁目～3丁目、駅南本町、大財1丁目～6丁目、大財北町、鬼丸町</td>
+                        </tr>
+                        <tr>
+                            <th>か</th>
+                            <td>神園1丁目～6丁目、川原町、木原1丁目～3丁目、神野西1丁目～4丁目、神野東1丁目～4丁目、巨勢町大字牛島、呉服元町、紺屋町</td>
+                        </tr>
+                        <tr>
+                            <th>さ</th>
+                            <td>材木1丁目～2丁目、栄町、道祖元町、昭栄町、城内1丁目～2丁目、精町、白山1丁目～2丁目、新栄東1丁目～4丁目、新生町、新中町、末広1丁目～2丁目、成章町</td>
+                        </tr>
+                        <tr>
+                            <th>た</th>
+                            <td>高木町、田代1丁目～2丁目、西田代1丁目～2丁目、西田代町、多布施1丁目～2丁目、中央本町、天神1丁目～3丁目、天佑1丁目～2丁目、天佑団地、唐人1丁目～2丁目</td>
+                        </tr>
+                        <tr>
+                            <th>な</th>
+                            <td>中折町、長瀬町、中の小路、中の館町、西魚町</td>
+                        </tr>
+                        <tr>
+                            <th>は</th>
+                            <td>八幡小路、八丁畷町、東佐賀町、兵庫町藤木(34号線より南側のみ)、兵庫町大字若宮(34号線より南側のみ、1～435番地まで)、兵庫南1丁目～4丁目、堀川町、本庄町本庄袋、本庄町大字本庄
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>ま</th>
+                            <td>松原1丁目～4丁目、水ヶ江1丁目～6丁目、緑小路、南佐賀1丁目～3丁目</td>
+                        </tr>
+                        <tr>
+                            <th>や</th>
+                            <td>柳町、与賀町</td>
+                        </tr>
+                        <tr>
+                            <th>ら</th>
+                            <td>六座町</td>
+                        </tr>
+                        <tr>
+                            <th>わ</th>
+                            <td>若宮1丁目～2丁目</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p>※ これ以外の地域の方もお問い合わせください。</p>
+            </div>
+            <div id="other">
+                <h3>その他</h3>
+                <ul>
+                    <li><strong>季節・仕入れにより、商品内容が変更になる場合がございますので、予めご了承ください。</strong></li>
+                    <li>土日祝・年末年始・お盆などは、たいへん混み合いますので、ご予約をいただければ幸いです。</li>
+                    <li>悪天候や交通状況により、お届けができない場合がございます。</li>
+                    <li>生ものですので、お早めにお召し上がりください。</li>
+                    <li>予告なく、価格を変更する場合がございます。その際は何卒ご容赦ください。</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

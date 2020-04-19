@@ -1,3 +1,345 @@
-<h1>Alacarte</h1>
-<!-- この一行でAlacarteの一覧を表示 -->
-<%= render @alacartes %>
+<div id="contentsInner" class="clear">
+    <div id="sideAlpha">
+        <!--
+        <div style="margin-bottom: 5px; "><a href="/plan/" title="限定プラン"><img src="http://www.sushiyoshi-yamasa.jp/images/common/plan_banner.gif" alt="ホームページ開設記念限定プランご紹介" width="210" height="100"></a></div>
+        -->
+        <ul>
+            <li class="alpha"><a href="/menu/" title="おしながき">おしながき</a></li>
+            <li class="beta"><a href="/quality/" title="当店のこだわり">当店のこだわり</a></li>
+            <li class="gamma"><a href="/about/" title="店内のご案内">店内のご案内</a></li>
+            <li class="delta"><a href="/delivery/" title="出前メニュー">出前メニュー</a></li>
+            <!--<li class="epsilon"><a href="/shopping/" title="お取り寄せ">お取り寄せ</a></li>
+            <li class="close"><img alt="店休日" src="../images/common/close.jpg" width="200" height="25" /><br />6/4(月)、6/11(月)、6/18(月)、6/25(月)</li>
+            -->
+            <li>
+                <img alt="お問い合わせはこちらから" src="/images/common/sideBeta00.gif" width="210" height="30">
+                <div
+                    style="margin: 0 0 15px 0; padding: 10px; width: 190px; background: #000; font-size: 12px !important;">
+                    <strong style="color: #d5c010; font-size: 24px; font-weight: 700; display: block;">
+                        <span style="margin: 0 0.1em 0 0; font-size: 20px;">☎</span>0952-20-1239
+                    </strong>
+                    店舗営業時間／18:00〜23:00<br>
+                    店休日／月曜日
+                </div>
+            </li>
+            <li class="zeta">山沙商店「すし芳」宅配専用ダイヤル TEL.0952-20-1238</li>
+            <li class="eta"><a href="/access/" title="交通アクセス">交通アクセス</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="path">
+            <a href="/">HOME</a> &gt; おしながき：一品料理
+        </div>
+        <div id="menu">
+            <h2>おしながき：一品料理</h2>
+            <div id="categoryNavigation">
+                <ul class="clear">
+                    <li><a href="../">おまかせ</a></li>
+                    <li><a href="../nigiri/">にぎり</a></li>
+                    <li><strong>一品料理</strong></li>
+                    <li><a href="../drink/">お飲み物</a></li>
+                </ul>
+            </div>
+            <h3>一品料理</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="一品料理写真" class="pic">
+                    <tbody>
+                        <tr>
+                            <td colspan="2"><a href="./images/komenasu.jpg" rel="lightbox[]" title="米茄子の田楽"><img
+                                        alt="米茄子の田楽" src="./images/komenasus.jpg" width="100" height="100"></a></td>
+                            <td class="mar"></td>
+                            <td colspan="2"><a href="./images/ebino.jpg" rel="lightbox[]" title="海老の竜田揚げ"><img
+                                        alt="海老の竜田揚げ" src="./images/ebinos.jpg" width="100" height="100"></a></td>
+                            <td class="mar"></td>
+                            <td colspan="2"><a href="./images/chawanmushi.jpg" rel="lightbox[]" title="季節のあんかけ茶碗蒸し"><img
+                                        alt="季節のあんかけ茶碗蒸し" src="./images/chawanmushis.jpg" width="100" height="100"></a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>米茄子の田楽</th>
+                            <td>750円</td>
+                            <td class="mar"></td>
+                            <th>海老の竜田揚げ</th>
+                            <td>750円</td>
+                            <td class="mar"></td>
+                            <th>茶碗蒸し</th>
+                            <td>550円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table cellspacing="0" cellpadding="0" border="0" summary="一品料理" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>柚子モロキュー</th>
+                            <td>450円</td>
+                        </tr>
+                        <tr>
+                            <th>アボガドスライスの酒盗添え</th>
+                            <td>600円</td>
+                        </tr>
+                        <tr>
+                            <th>クリームチーズの酒盗添え</th>
+                            <td>600円</td>
+                        </tr>
+                        <tr>
+                            <th>炙りトロ皮のポン酢がけ</th>
+                            <td>700円</td>
+                        </tr>
+                        <!-- <tr><th>鮪の角煮</th><td>780円</td></tr> -->
+                        <tr>
+                            <th>揚げだし豆腐</th>
+                            <td>650円</td>
+                        </tr>
+                        <tr>
+                            <th>ゴマ豆腐の揚げだし</th>
+                            <td>750円</td>
+                        </tr>
+                        <tr>
+                            <th>自家製さつま揚げ</th>
+                            <td>750円</td>
+                        </tr>
+                        <tr>
+                            <th>米茄子の田楽</th>
+                            <td>750円</td>
+                        </tr>
+                        <!-- <tr><th>米茄子のチーズ田楽</th><td>880円</td></tr> -->
+                        <tr>
+                            <th>烏賊下足の塩焼き</th>
+                            <td>750円</td>
+                        </tr>
+                        <tr>
+                            <th>海老の竜田揚げ</th>
+                            <td>750円</td>
+                        </tr>
+                        <tr>
+                            <th>じゃが芋万十</th>
+                            <td>850円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table cellspacing="0" cellpadding="0" border="0" summary="一品料理" class="largeRight">
+                    <!-- <tr><th>トロ皮と水菜のハリハリ</th><td>780円</td></tr> -->
+                    <tbody>
+                        <tr>
+                            <th>海鮮ゴマグラタン</th>
+                            <td>950円</td>
+                        </tr>
+                        <tr>
+                            <th>カンパチカマの塩焼き</th>
+                            <td>1,000円</td>
+                        </tr>
+                        <tr>
+                            <th>大トロスジ炙り</th>
+                            <td>1,500円</td>
+                        </tr>
+                        <tr>
+                            <th>白身魚の柚子蒸し</th>
+                            <td>1,500円</td>
+                        </tr>
+                        <tr>
+                            <th>ノドグロ西京焼き</th>
+                            <td>1,600円</td>
+                        </tr>
+                        <tr>
+                            <th>甘鯛西京焼</th>
+                            <td>1,350円</td>
+                        </tr>
+                        <tr>
+                            <th>金目鯛の西京焼き</th>
+                            <td>1,350円</td>
+                        </tr>
+                        <tr>
+                            <th>ノドグロ塩焼き</th>
+                            <td>1,500円</td>
+                        </tr>
+                        <!-- <tr><th>クジラベーコン</th><td>1,800円</td></tr> -->
+                        <tr>
+                            <th>クジラサエズリ</th>
+                            <td>1,800円</td>
+                        </tr>
+                        <tr>
+                            <th>ウネクジラ</th>
+                            <td>2,000円</td>
+                        </tr>
+                        <tr>
+                            <th>
+                                <!-- 季節のあんかけ -->茶碗蒸し</th>
+                            <td>550円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>刺身</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="刺身" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>刺身盛り合わせ（２人前）</th>
+                            <td>4,000円から</td>
+                        </tr>
+                        <tr>
+                            <th>上刺身盛り合わせ（２人前）</th>
+                            <td>5,000円から</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="./images/sashimori.jpg" rel="lightbox[]" title="刺盛"><img alt="刺盛" src="./images/sashimoris.jpg"
+                        width="100" height="100"></a>
+            </div>
+            <h3>珍味</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="珍味" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>このわた</th>
+                            <td>1,000円</td>
+                        </tr>
+                        <tr>
+                            <th>ばくらい</th>
+                            <td>1,100円</td>
+                        </tr>
+                        <tr>
+                            <th>塩ウニ</th>
+                            <td>1,300円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--<a href="./images/#.jpg" rel="lightbox[]" title=""><img alt="一品料理写真" src="../../images/common/dummy.gif" width="100" height="100" /></a>-->
+            </div>
+            <h3>荒炊き</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="荒炊き" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>魚は仕入れによって異なっているのでおたずねください</th>
+                        </tr>
+                        <!-- <tr><th>真鯛</th><td>1,500円から</td></tr>
+                <tr><th>石鯛</th><td>1,600円から</td></tr>
+                <tr><th>金目鯛</th><td>1,500円から</td></tr> -->
+                    </tbody>
+                </table>
+                <a href="./images/kabuto.jpg" rel="lightbox[]" title="キンメダイの荒煮"><img alt="キンメダイの荒煮"
+                        src="./images/kabutos.jpg" width="100" height="100"></a>
+            </div>
+            <h3>骨蒸し</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="骨蒸し" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>魚は仕入れによって異なっているのでおたずねください</th>
+                        </tr>
+                        <!-- <tr><th>スズキ</th><td>1,300円から</td></tr>
+                <tr><th>石垣鯛</th><td>1,300円から</td></tr>
+                <tr><th>真鯛</th><td>1,600円から</td></tr> -->
+                    </tbody>
+                </table>
+                <!--<a href="./images/#.jpg" rel="lightbox[]" title=""><img alt="一品料理写真" src="../../images/common/dummy.gif" width="100" height="100" /></a>-->
+            </div>
+            <h3>天婦羅</h3>
+            <div class="menu clear">
+                <!--					<table cellspacing="0" cellpadding="0" border="0" summary="一品料理写真" class="pic">
+                    <tr>
+                    </tr>
+                    <tr><th>料理名</th><td>金額</td><th>料理名</th><td>金額</td><th>料理名</th><td>金額</td></tr>
+                </table>
+-->
+                <table cellspacing="0" cellpadding="0" border="0" summary="天婦羅" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>
+                                <!-- 季節の -->おまかせ天婦羅（1人前）</th>
+                            <td>1,300円から</td>
+                        </tr>
+                        <tr>
+                            <th>車海老</th>
+                            <td>650円</td>
+                        </tr>
+                        <tr>
+                            <th>穴子</th>
+                            <td>500円</td>
+                        </tr>
+                        <tr>
+                            <th>白身シソ巻き</th>
+                            <td>400円</td>
+                        </tr>
+                        <tr>
+                            <th>ホタテ</th>
+                            <td>400円</td>
+                        </tr>
+                        <tr>
+                            <th>エリンギ</th>
+                            <td>200円</td>
+                        </tr>
+                        <tr>
+                            <th>しめじ</th>
+                            <td>200円</td>
+                        </tr>
+                        <tr>
+                            <th>ししとう</th>
+                            <td>200円</td>
+                        </tr>
+                        <tr>
+                            <th>蓮根</th>
+                            <td>200円</td>
+                        </tr>
+                        <tr>
+                            <th>大葉</th>
+                            <td>200円</td>
+                        </tr>
+                        <tr>
+                            <th>茄子</th>
+                            <td>150円</td>
+                        </tr>
+                        <tr>
+                            <th>南瓜</th>
+                            <td>150円</td>
+                        </tr>
+                        <tr>
+                            <th>玉ねぎ</th>
+                            <td>150円</td>
+                        </tr>
+                        <!--					<tr><th>車海老</th><td>650円</td></tr>
+                <tr><th>穴子</th><td>550円</td></tr>
+                <tr><th>ホタテ</th><td>400円</td></tr>
+                <tr><th>白身しそ巻き</th><td>400円</td></tr>
+                <tr><th>山芋チーズしそ巻き</th><td>250円</td></tr>
+                <tr><th>烏賊</th><td>380円</td></tr>
+                <tr><th>烏賊下足</th><td>280円</td></tr>
+                <tr><th>大葉</th><td>200円</td></tr>
+                </table>
+                <table cellspacing="0" cellpadding="0" border="0" summary="天婦羅" class="largeRight">
+                <tr><th>山芋</th><td>200円</td></tr>
+                <tr><th>茄子</th><td>150円</td></tr>
+                <tr><th>南瓜</th><td>150円</td></tr>
+                <tr><th>玉葱</th><td>150円</td></tr>
+                <tr><th>万願寺</th><td>200円</td></tr>
+                <tr><th>エリンギ</th><td>200円</td></tr>
+                <tr><th>しめじ</th><td>200円</td></tr>
+                <tr><th>オクラ</th><td>200円</td></tr>
+                <tr><th>銀杏</th><td>300円</td></tr>
+-->
+                    </tbody>
+                </table>
+                <a href="./images/tempura.jpg" rel="lightbox[]" title="天婦羅"><img alt="天婦羅" src="./images/tempuras.jpg"
+                        width="100" height="67"></a>
+            </div>
+            <h3>椀もの</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="椀もの" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>赤出し</th>
+                            <td>400円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!--<a href="./images/akadashi.jpg" rel="lightbox[]" title="赤だし"><img alt="赤だし" src="./images/akadashis.jpg" width="100" height="100" /></a>-->
+            </div>
+            <div class="att">※ 季節・仕入れにより、商品内容が変更になる場合がございますので、予め御了承ください。</div>
+            <div class="top_link">
+                <a href="#headerNavi"><img alt="TOPに戻る" src="../../images/common/top_link.gif" width="82"
+                        height="20"></a>
+            </div>
+        </div>
+    </div>
+</div>

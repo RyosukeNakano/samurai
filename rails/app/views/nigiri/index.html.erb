@@ -1,3 +1,212 @@
-<h1>Nigiri</h1>
-<!-- この一行でNigiriの一覧を表示 -->
-<%= render @nigiris %>
+<div id="contentsInner" class="clear">
+    <div id="sideAlpha">
+        <!--
+        <div style="margin-bottom: 5px; "><a href="/plan/" title="限定プラン"><img src="http://www.sushiyoshi-yamasa.jp/images/common/plan_banner.gif" alt="ホームページ開設記念限定プランご紹介" width="210" height="100"></a></div>
+        -->
+        <ul>
+            <li class="alpha"><a href="/menu/" title="おしながき">おしながき</a></li>
+            <li class="beta"><a href="/quality/" title="当店のこだわり">当店のこだわり</a></li>
+            <li class="gamma"><a href="/about/" title="店内のご案内">店内のご案内</a></li>
+            <li class="delta"><a href="/delivery/" title="出前メニュー">出前メニュー</a></li>
+            <!--<li class="epsilon"><a href="/shopping/" title="お取り寄せ">お取り寄せ</a></li>
+            <li class="close"><img alt="店休日" src="../images/common/close.jpg" width="200" height="25" /><br />6/4(月)、6/11(月)、6/18(月)、6/25(月)</li>
+            -->
+            <li>
+                <img alt="お問い合わせはこちらから" src="/images/common/sideBeta00.gif" width="210" height="30">
+                <div
+                    style="margin: 0 0 15px 0; padding: 10px; width: 190px; background: #000; font-size: 12px !important;">
+                    <strong style="color: #d5c010; font-size: 24px; font-weight: 700; display: block;">
+                        <span style="margin: 0 0.1em 0 0; font-size: 20px;">☎</span>0952-20-1239
+                    </strong>
+                    店舗営業時間／18:00〜23:00<br>
+                    店休日／月曜日
+                </div>
+            </li>
+            <li class="zeta">山沙商店「すし芳」宅配専用ダイヤル TEL.0952-20-1238</li>
+            <li class="eta"><a href="/access/" title="交通アクセス">交通アクセス</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="path">
+            <a href="/">HOME</a> &gt; おしながき：にぎり
+        </div>
+        <div id="menu">
+            <h2>おしながき：にぎり</h2>
+            <div id="categoryNavigation">
+                <ul class="clear">
+                    <li><a href="../">おまかせ</a></li>
+                    <li><strong>にぎり</strong></li>
+                    <li><a href="../alacarte/">一品料理</a></li>
+                    <li><a href="../drink/">お飲み物</a></li>
+                </ul>
+            </div>
+            <h3>おまかせにぎり</h3>
+            <div>
+                <table cellspacing="0" cellpadding="0" border="0" class="entrust" summary="おまかせにぎり">
+                    <tbody>
+                        <tr>
+                            <td class="enth">10貫</td>
+                            <td>4,000円</td>
+                        </tr>
+                        <tr>
+                            <td class="enth">8貫</td>
+                            <td>3,500円</td>
+                        </tr>
+                        <tr>
+                            <td class="enth">5貫</td>
+                            <td>2,500円</td>
+                        </tr>
+                        <tr style="border-bottom: none;">
+                            <td colspan="2">
+                                ※ 写真は一例です<br>
+                                <img alt="" src="./images/omakase.jpg" width="600" height="135"
+                                    style="margin-top: 20px;">
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="clear"></div>
+            <h3>にぎり</h3>
+            <div class="menu clear">
+                <p>このほかにも多彩なネタをご用意しております。</p>
+            </div>
+            <div class="menu clear thumb">
+                <table cellspacing="0" cellpadding="0" border="0" summary="にぎり">
+                    <tbody>
+                        <tr>
+                            <td><a href="./images/suzuki.jpg" rel="lightbox[sushi]" title="スズキ"><img alt="スズキ"
+                                        src="./images/suzuki.jpg" width="160" height="107"></a><br><strong>スズキ</strong>
+                            </td>
+                            <td><a href="./images/ishigakidai.jpg" rel="lightbox[sushi]" title="イシガキダイ"><img
+                                        alt="イシガキダイ" src="./images/ishigakidai.jpg" width="160"
+                                        height="107"></a><br><strong>イシガキダイ</strong></td>
+                            <td><a href="./images/isaki.jpg" rel="lightbox[sushi]" title="イサキ"><img alt="イサキ"
+                                        src="./images/isaki.jpg" width="160" height="107"></a><br><strong>イサキ</strong>
+                            </td>
+                            <td><a href="./images/tsurikinme.jpg" rel="lightbox[sushi]" title="キンメダイ"><img alt="キンメダイ"
+                                        src="./images/tsurikinme.jpg" width="160"
+                                        height="107"></a><br><strong>キンメダイ</strong></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./images/ainame.jpg" rel="lightbox[sushi]" title="アイナメ"><img alt="アイナメ"
+                                        src="./images/ainame.jpg" width="160" height="107"></a><br><strong>アイナメ</strong>
+                            </td>
+                            <td><a href="./images/ishidai.jpg" rel="lightbox[sushi]" title="イシダイ"><img alt="イシダイ"
+                                        src="./images/ishidai.jpg" width="160"
+                                        height="107"></a><br><strong>イシダイ</strong></td>
+                            <td><a href="./images/nodoguro.jpg" rel="lightbox[sushi]" title="ノドグロ"><img alt="ノドグロ"
+                                        src="./images/nodoguro2.jpg" width="160"
+                                        height="107"></a><br><strong>ノドグロ</strong></td>
+                            <td><a href="./images/kisu.jpg" rel="lightbox[sushi]" title="キス"><img alt="キス"
+                                        src="./images/kisu.jpg" width="160" height="107"></a><br><strong>キス</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="./images/makogarei.jpg" rel="lightbox[sushi]" title="マコガレイ"><img alt="マコガレイ"
+                                        src="./images/makogarei.jpg" width="160"
+                                        height="107"></a><br><strong>マコガレイ</strong></td>
+                            <td><a href="./images/engawa.jpg" rel="lightbox[sushi]" title="エンガワ"><img alt="エンガワ"
+                                        src="./images/engawa.jpg" width="160" height="107"></a><br><strong>エンガワ</strong>
+                            </td>
+                            <td><a href="./images/akami.jpg" rel="lightbox[sushi]" title="赤身"><img alt="赤身"
+                                        src="./images/akami.jpg" width="160" height="107"></a><br><strong>赤身</strong>
+                            </td>
+                            <td><a href="./images/toro.jpg" rel="lightbox[sushi]" title="トロ"><img alt="トロ"
+                                        src="./images/toro.jpg" width="160" height="107"></a><br><strong>トロ</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="./images/otoro.jpg" rel="lightbox[sushi]" title="大トロ"><img alt="大トロ"
+                                        src="./images/otoro.jpg" width="160" height="107"></a><br><strong>大トロ</strong>
+                            </td>
+                            <td><a href="./images/iwashi.jpg" rel="lightbox[sushi]" title="イワシ"><img alt="イワシ"
+                                        src="./images/iwashi.jpg" width="160" height="107"></a><br><strong>イワシ</strong>
+                            </td>
+                            <td><a href="./images/aji.jpg" rel="lightbox[sushi]" title="アジ"><img alt="アジ"
+                                        src="./images/aji.jpg" width="160" height="107"></a><br><strong>アジ</strong></td>
+                            <td><a href="./images/shinko.jpg" rel="lightbox[sushi]" title="シンコ"><img alt="シンコ"
+                                        src="./images/shinko.jpg" width="160" height="107"></a><br><strong>シンコ</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="./images/koiwashi.jpg" rel="lightbox[sushi]" title="コイワシ"><img alt="コイワシ"
+                                        src="./images/koiwashi.jpg" width="160"
+                                        height="107"></a><br><strong>コイワシ</strong></td>
+                            <td><a href="./images/koaji.jpg" rel="lightbox[sushi]" title="コアジ"><img alt="コアジ"
+                                        src="./images/koaji.jpg" width="160" height="107"></a><br><strong>コアジ</strong>
+                            </td>
+                            <td><a href="./images/sayori.jpg" rel="lightbox[sushi]" title="サヨリ"><img alt="サヨリ"
+                                        src="./images/sayori.jpg" width="160" height="107"></a><br><strong>サヨリ</strong>
+                            </td>
+                            <td><a href="./images/tachiuo.jpg" rel="lightbox[sushi]" title="タチウオ"><img alt="タチウオ"
+                                        src="./images/tachiuo.jpg" width="160"
+                                        height="107"></a><br><strong>タチウオ</strong></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./images/kohada.jpg" rel="lightbox[sushi]" title="コハダ"><img alt="コハダ"
+                                        src="./images/kohada.jpg" width="160" height="107"></a><br><strong>コハダ</strong>
+                            </td>
+                            <td><a href="./images/sawara.jpg" rel="lightbox[sushi]" title="サワラ"><img alt="サワラ"
+                                        src="./images/sawara.jpg" width="160" height="107"></a><br><strong>サワラ</strong>
+                            </td>
+                            <td><a href="./images/saba.jpg" rel="lightbox[sushi]" title="サバ"><img alt="サバ"
+                                        src="./images/saba.jpg" width="160" height="107"></a><br><strong>サバ</strong>
+                            </td>
+                            <td><a href="./images/yaitogatsuo.jpg" rel="lightbox[sushi]" title="ヤイトガツオ"><img
+                                        alt="ヤイトガツオ" src="./images/yaitogatsuo.jpg" width="160"
+                                        height="107"></a><br><strong>ヤイトガツオ</strong></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./images/hiragai.jpg" rel="lightbox[sushi]" title="平貝（タイラガイ）"><img
+                                        alt="平貝（タイラガイ）" src="./images/hiragai.jpg" width="160"
+                                        height="107"></a><br><strong>平貝</strong></td>
+                            <td><a href="./images/akagai.jpg" rel="lightbox[sushi]" title="赤貝"><img alt="赤貝"
+                                        src="./images/akagai.jpg" width="160" height="107"></a><br><strong>赤貝</strong>
+                            </td>
+                            <td><a href="./images/mirugai.jpg" rel="lightbox[sushi]" title="ミル貝"><img alt="ミル貝"
+                                        src="./images/mirugai.jpg" width="160" height="107"></a><br><strong>ミル貝</strong>
+                            </td>
+                            <td><a href="./images/mushiawabi.jpg" rel="lightbox[sushi]" title="蒸しアワビ"><img alt="蒸しアワビ"
+                                        src="./images/mushiawabi.jpg" width="160"
+                                        height="107"></a><br><strong>蒸しアワビ</strong></td>
+                        </tr>
+                        <tr>
+                            <td><a href="./images/tennengaki.jpg" rel="lightbox[sushi]" title="天然ガキ"><img alt="天然ガキ"
+                                        src="./images/tennengaki.jpg" width="160"
+                                        height="107"></a><br><strong>天然ガキ</strong></td>
+                            <td><a href="./images/akauni2.jpg" rel="lightbox[sushi]" title="赤ウニ"><img alt="赤ウニ"
+                                        src="./images/akauni2.jpg" width="160" height="107"></a><br><strong>赤ウニ</strong>
+                            </td>
+                            <td><a href="./images/anago.jpg" rel="lightbox[sushi]" title="アナゴ"><img alt="アナゴ"
+                                        src="./images/anago.jpg" width="160" height="107"></a><br><strong>アナゴ</strong>
+                            </td>
+                            <td><a href="./images/menegi.jpg" rel="lightbox[sushi]" title="芽ネギ"><img alt="芽ネギ"
+                                        src="./images/menegi.jpg" width="160" height="107"></a><br><strong>芽ネギ</strong>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><a href="./images/akauni.jpg" rel="lightbox[sushi]" title="赤ウニ"><img alt="赤ウニ"
+                                        src="./images/akauni.jpg" width="160" height="107"></a><br><strong>赤ウニ</strong>
+                            </td>
+                            <td><a href="./images/kurumaebi.jpg" rel="lightbox[sushi]" title="クルマエビ"><img alt="クルマエビ"
+                                        src="./images/kurumaebi.jpg" width="160"
+                                        height="107"></a><br><strong>クルマエビ</strong></td>
+                            <td><a href="./images/ikura.jpg" rel="lightbox[sushi]" title="イクラ"><img alt="イクラ"
+                                        src="./images/ikura.jpg" width="160" height="107"></a><br><strong>イクラ</strong>
+                            </td>
+                            <td><a href="./images/yariika.jpg" rel="lightbox[sushi]" title="ヤリイカ"><img alt="ヤリイカ"
+                                        src="./images/yariika.jpg" width="160"
+                                        height="107"></a><br><strong>ヤリイカ</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="att">※ 季節・仕入れにより、商品内容が変更になる場合がございますので、予め御了承ください。</div>
+            <div class="top_link">
+                <a href="#headerNavi"><img alt="TOPに戻る" src="../../images/common/top_link.gif" width="82"
+                        height="20"></a>
+            </div>
+        </div>
+    </div>
+</div>

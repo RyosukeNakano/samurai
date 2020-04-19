@@ -1,3 +1,75 @@
-<h1>Inquiry</h1>
-<!-- この一行でpostの一覧を表示できます。 -->
-<%= link_to 'New Post', new_post_path %>
+<div id="contentsInner" class="clear">
+    <div id="sideAlpha">
+        <!--
+        <div style="margin-bottom: 5px; "><a href="/plan/" title="限定プラン"><img src="http://www.sushiyoshi-yamasa.jp/images/common/plan_banner.gif" alt="ホームページ開設記念限定プランご紹介" width="210" height="100"></a></div>
+        -->
+        <ul>
+            <li class="alpha"><a href="/menu/" title="おしながき">おしながき</a></li>
+            <li class="beta"><a href="/quality/" title="当店のこだわり">当店のこだわり</a></li>
+            <li class="gamma"><a href="/about/" title="店内のご案内">店内のご案内</a></li>
+            <li class="delta"><a href="/delivery/" title="出前メニュー">出前メニュー</a></li>
+            <!--<li class="epsilon"><a href="/shopping/" title="お取り寄せ">お取り寄せ</a></li>
+            <li class="close"><img alt="店休日" src="../images/common/close.jpg" width="200" height="25" /><br />6/4(月)、6/11(月)、6/18(月)、6/25(月)</li>
+            -->
+            <li>
+                <img alt="お問い合わせはこちらから" src="/images/common/sideBeta00.gif" width="210" height="30">
+                <div
+                    style="margin: 0 0 15px 0; padding: 10px; width: 190px; background: #000; font-size: 12px !important;">
+                    <strong style="color: #d5c010; font-size: 24px; font-weight: 700; display: block;">
+                        <span style="margin: 0 0.1em 0 0; font-size: 20px;">☎</span>0952-20-1239
+                    </strong>
+                    店舗営業時間／18:00〜23:00<br>
+                    店休日／月曜日
+                </div>
+            </li>
+            <li class="zeta">山沙商店「すし芳」宅配専用ダイヤル TEL.0952-20-1238</li>
+            <li class="eta"><a href="/access/" title="交通アクセス">交通アクセス</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="path">
+            <a href="../">HOME</a> &gt; お問い合わせ
+        </div>
+        <div id="inquiry">
+            <h2>お問い合わせ</h2>
+            <p>
+                山沙商店「すし芳」へのお問い合わせは下記のフォームから受け付けております。<br>
+                ※入力項目はすべて必須となっております。
+            </p>
+            <form method="post" action="./confirm.html" id="inquiryForm">
+                <table cellspacing="0" cellpadding="0" border="0" summary="お問い合わせフォーム">
+                    <tbody>
+                        <tr>
+                            <th>お名前</th>
+                            <td><input type="text" name="inquiryName" id="inquiryName" value="" class="required"
+                                    title="必須入力です。"></td>
+                        </tr>
+                        <tr>
+                            <th>メールアドレス</th>
+                            <td><input type="text" name="inquiryMail" id="inquiryMail" value=""
+                                    class="required validate-email" title="必須入力です。正しいメール形式で入力してください。"></td>
+                        </tr>
+                        <tr>
+                            <th>お問い合わせ内容</th>
+                            <td><textarea name="inquiryMessage" id="inquiryMessage" value="" class="required"
+                                    title="必須入力です。"></textarea></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <div id="inquiryButton">
+                    <input type="submit" name="" value="入力内容確認">
+                </div>
+            </form>
+            <script type="text/javascript">
+                function formCallback(result, form) {
+                    window.status = "valiation callback for form '" + form.id + "': result = " + result;
+                }
+                var valid = new Validation('inquiryForm', {
+                    useTitles: true,
+                    immediate: true,
+                    onFormValidate: formCallback
+                });
+            </script>
+        </div>
+    </div>
+</div>

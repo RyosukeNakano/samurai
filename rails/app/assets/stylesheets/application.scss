@@ -3,31 +3,31 @@
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
 div#mainArea {
   border-top: solid 1px #434343;
-  background: url(../assets/images/index/main.gif) repeat-x;
+  background: url(../images/common/main.gif) repeat-x;
 }
 
 div#mainArea h1 {
   margin: 0;
   padding: 0;
   height: 351px;
-  background: url(../images/index/main.jpg) center no-repeat;
+  background: url(../images/common/main.jpg) center no-repeat;
   text-indent: -9999px;
 }
 
 div#mainArea h1 {
-  background: url(../images/index/main2014.jpg) center no-repeat;
+  background: url(../images/common/main2014.jpg) center no-repeat;
 }
 
 h2 {
   margin: 9px 0 15px 0;
   padding: 0;
   height: 36px;
-  background: url(../images/index/h2.gif) no-repeat;
+  background: url(../images/common/h2.gif) no-repeat;
   text-indent: -9999px;
 }
 
 h2#hitokoto {
-  background: url(../images/index/h2_hitokoto.gif) no-repeat;
+  background: url(../images/common/h2_hitokoto.gif) no-repeat;
 }
 
 p.hitokoto {
@@ -373,92 +373,92 @@ div#content div#path {
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	Side Alpha
 =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=- */
-// div#sideAlpha {
-//   width: 235px;
-//   text-align: left;
-//   float: left;
-// }
+div#sideAlpha {
+  width: 235px;
+  text-align: left;
+  float: left;
+}
 
-// div#sideAlpha ul {
-//   margin: 0;
-//   padding: 0;
-//   list-style: none;
-// }
+div#sideAlpha ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
 
-// div#sideAlpha ul li {
-//   margin: 0 0 6px 0;
-//   font-size: 1px;
-// }
+div#sideAlpha ul li {
+  margin: 0 0 6px 0;
+  font-size: 1px;
+}
 
-// div#sideAlpha ul li a {
-//   height: 90px;
-//   text-indent: -9999px;
-//   display: block;
-// }
+div#sideAlpha ul li a {
+  height: 90px;
+  text-indent: -9999px;
+  display: block;
+}
 
-// div#sideAlpha ul li.alpha a {
-//   width: 210px;
-//   background: url(../images/common/sideAlpha01.jpg) 0 0 no-repeat;
-// }
+div#sideAlpha ul li.alpha a {
+  width: 210px;
+  background: url(../images/common/sideAlpha01.jpg) 0 0 no-repeat;
+}
 
-// div#sideAlpha ul li.beta a {
-//   width: 210px;
-//   background: url(../images/common/sideAlpha02.jpg) 0 0 no-repeat;
-// }
+div#sideAlpha ul li.beta a {
+  width: 210px;
+  background: url(../images/common/sideAlpha02.jpg) 0 0 no-repeat;
+}
 
-// div#sideAlpha ul li.gamma a {
-//   width: 210px;
-//   background: url(../images/common/sideAlpha03.jpg) 0 0 no-repeat;
-// }
+div#sideAlpha ul li.gamma a {
+  width: 210px;
+  background: url(../images/common/sideAlpha03.jpg) 0 0 no-repeat;
+}
 
-// div#sideAlpha ul li.delta a {
-//   width: 210px;
-//   background: url(../images/common/sideAlpha04.jpg) 0 0 no-repeat;
-// }
+div#sideAlpha ul li.delta a {
+  width: 210px;
+  background: url(../images/common/sideAlpha04.jpg) 0 0 no-repeat;
+}
 
-// div#sideAlpha ul li.epsilon a {
-//   width: 210px;
-//   background: url(../images/common/sideAlpha05.jpg) 0 0 no-repeat;
-// }
+div#sideAlpha ul li.epsilon a {
+  width: 210px;
+  background: url(../images/common/sideAlpha05.jpg) 0 0 no-repeat;
+}
 
-// div#sideAlpha ul li.zeta {
-//   width: 210px;
-//   height: 162px;
-//   background: url(../images/common/sideBeta01.gif) 0 0 no-repeat;
-//   text-indent: -9999px;
-//   display: block;
-// }
+div#sideAlpha ul li.zeta {
+  width: 210px;
+  height: 162px;
+  background: url(../images/common/sideBeta01.gif) 0 0 no-repeat;
+  text-indent: -9999px;
+  display: block;
+}
 
-// div#sideAlpha ul li.eta a {
-//   width: 210px;
-//   height: 71px;
-//   background: url(../images/common/sideBeta02.gif) 0 0 no-repeat;
-//   text-indent: -9999px;
-//   display: block;
-// }
+div#sideAlpha ul li.eta a {
+  width: 210px;
+  height: 71px;
+  background: url(../images/common/sideBeta02.gif) 0 0 no-repeat;
+  text-indent: -9999px;
+  display: block;
+}
 
-// div#sideAlpha ul li.theta a {
-//   width: 210px;
-//   height: 71px;
-//   background: url(../images/common/sideBeta03.gif) 0 0 no-repeat;
-//   text-indent: -9999px;
-//   display: block;
-// }
+div#sideAlpha ul li.theta a {
+  width: 210px;
+  height: 71px;
+  background: url(../images/common/sideBeta03.gif) 0 0 no-repeat;
+  text-indent: -9999px;
+  display: block;
+}
 
-// div#sideAlpha ul li.iota a {
-//   width: 210px;
-//   height: 36px;
-//   background: url(../images/common/sideBeta04.gif) 0 0 no-repeat;
-//   text-indent: -9999px;
-//   display: block;
-// }
+div#sideAlpha ul li.iota a {
+  width: 210px;
+  height: 36px;
+  background: url(../images/common/sideBeta04.gif) 0 0 no-repeat;
+  text-indent: -9999px;
+  display: block;
+}
 
-// div#sideAlpha ul li.close {
-//   margin: 10px 0;
-//   padding: 0 5px;
-//   width: 200px;
-//   font-size: 78%;
-// }
+div#sideAlpha ul li.close {
+  margin: 10px 0;
+  padding: 0 5px;
+  width: 200px;
+  font-size: 78%;
+}
 
 /* =-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-
 	Side Beta
@@ -695,12 +695,12 @@ div#globalFooter dl dd.beta p {
 
 #prevLink:hover,
 #prevLink:visited:hover {
-  background: url(../images/lightbox/prevlabel.gif) left 15% no-repeat;
+  background: url(../images/common/lightbox/prevlabel.gif) left 15% no-repeat;
 }
 
 #nextLink:hover,
 #nextLink:visited:hover {
-  background: url(../images/lightbox/nextlabel.gif) right 15% no-repeat;
+  background: url(../images/common/lightbox/nextlabel.gif) right 15% no-repeat;
 }
 
 #imageDataContainer {

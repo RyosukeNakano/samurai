@@ -1,4 +1,4 @@
-<main>
+<!-- <main>
   <div class="container">
     <div class="inner">
       <ul class="nav nav-tabs">
@@ -21,13 +21,31 @@
         <li class="nav-item">
           <a class="nav-link" href="http://localhost:3000/about" title="店内のご案内">店内のご案内</a>
         </li>
-        <!-- <li class="nav-item">
+        <!- <li class="nav-item">
           <a class="nav-link" href="http://localhost:3000/plan" title="限定プラン">限定プラン</a>
-        </li> -->
+        </li> ->
         <li class="nav-item">
           <a class="nav-link" href="http://localhost:3000/delivery" title="出前メニュー">出前メニュー</a>
         </li>
       </ul>
     </div>
   </div>
-</main>
+</main> -->
+
+<div class="inner">
+  <ul id="primary" class="clear">
+    <li class="alpha"><a href="/greeting/" title="ごあいさつ">ごあいさつ</a></li>
+    <li class="beta" onmouseover="document.getElementById('secondary01').style.display='block';"
+      onmouseout="document.getElementById('secondary01').style.display='none';"><a href="/menu/" title="おしながき">おしながき</a>
+      <ul id="secondary01" style="display: none;">
+        <li><a href="/menu/"><img alt="おまかせ" src="/images/common/menu01.gif" width="188" height="30"></a></li>
+        <li><a href="/menu/nigiri/"><img alt="にぎり" src="/images/common/menu02.gif" width="188" height="30"></a></li>
+        <li><a href="/menu/alacarte/"><img alt="一品料理" src="/images/common/menu03.gif" width="188" height="30"></a></li>
+        <li><a href="/menu/drink/"><img alt="お飲み物" src="/images/common/menu04.gif" width="188" height="30"></a></li>
+      </ul>
+    </li>
+    <li class="gamma"><a href="/quality/" title="当店のこだわり">当店のこだわり</a></li>
+    <li class="delta"><a href="/about/" title="店内のご案内">佐賀市でディナー・接待　店内のご案内</a></li>
+    <li class="epsilon"><a href="/plan/" title="限定プラン">限定プラン</a></li>
+  </ul>
+</div>

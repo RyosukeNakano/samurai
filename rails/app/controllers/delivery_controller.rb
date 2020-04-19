@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-class DeliceryController < ApplicationController
+class DeliveryController < ApplicationController
   def index
     @deliveries = Delivery.all
   end

@@ -1,3 +1,378 @@
-<h1>Drinks</h1>
-<!-- この一行でDrinkの一覧を表示 -->
-<%= render @drinks %>
+<div id="contentsInner" class="clear">
+    <div id="sideAlpha">
+        <!--
+        <div style="margin-bottom: 5px; "><a href="/plan/" title="限定プラン"><img src="http://www.sushiyoshi-yamasa.jp/images/common/plan_banner.gif" alt="ホームページ開設記念限定プランご紹介" width="210" height="100"></a></div>
+        -->
+        <ul>
+            <li class="alpha"><a href="/menu/" title="おしながき">おしながき</a></li>
+            <li class="beta"><a href="/quality/" title="当店のこだわり">当店のこだわり</a></li>
+            <li class="gamma"><a href="/about/" title="店内のご案内">店内のご案内</a></li>
+            <li class="delta"><a href="/delivery/" title="出前メニュー">出前メニュー</a></li>
+            <!--<li class="epsilon"><a href="/shopping/" title="お取り寄せ">お取り寄せ</a></li>
+            <li class="close"><img alt="店休日" src="../images/common/close.jpg" width="200" height="25" /><br />6/4(月)、6/11(月)、6/18(月)、6/25(月)</li>
+            -->
+            <li>
+                <img alt="お問い合わせはこちらから" src="/images/common/sideBeta00.gif" width="210" height="30">
+                <div
+                    style="margin: 0 0 15px 0; padding: 10px; width: 190px; background: #000; font-size: 12px !important;">
+                    <strong style="color: #d5c010; font-size: 24px; font-weight: 700; display: block;">
+                        <span style="margin: 0 0.1em 0 0; font-size: 20px;">☎</span>0952-20-1239
+                    </strong>
+                    店舗営業時間／18:00〜23:00<br>
+                    店休日／月曜日
+                </div>
+            </li>
+            <li class="zeta">山沙商店「すし芳」宅配専用ダイヤル TEL.0952-20-1238</li>
+            <li class="eta"><a href="/access/" title="交通アクセス">交通アクセス</a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <div id="path">
+            <a href="/">HOME</a> &gt; おしながき：お飲み物
+        </div>
+        <div id="menu">
+            <h2>おしながき：お飲み物</h2>
+            <div id="categoryNavigation">
+                <ul class="clear">
+                    <li><a href="../">おまかせ</a></li>
+                    <li><a href="../nigiri/">にぎり</a></li>
+                    <li><a href="../alacarte/">一品料理</a></li>
+                    <li><strong>お飲み物</strong></li>
+                </ul>
+            </div>
+            <h3>日本酒
+                <!-- （期間限定） -->
+            </h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="日本酒" class="largeLeft">
+                    <!-- <tr><th>東洋美人 611</th><td>1,200円</td></tr>
+                <tr><th>鍋島 愛山 純米吟醸</th><td>1,200円</td></tr>
+                <tr><th>鍋島 雄町 純米酒</th><td>900円</td></tr> -->
+                    <tbody>
+                        <tr>
+                            <th>東一 純米酒</th>
+                            <td>850円</td>
+                        </tr>
+                        <tr>
+                            <th>鍋島 特別純米酒</th>
+                            <td>950円</td>
+                        </tr>
+                        <tr>
+                            <th>岩の蔵 純米酒</th>
+                            <td>850円</td>
+                        </tr>
+                        <tr>
+                            <th>万齢 純米吟醸</th>
+                            <td>950円</td>
+                        </tr>
+                        <tr>
+                            <th>岩の蔵 純米吟醸</th>
+                            <td>1,150円</td>
+                        </tr>
+                        <tr>
+                            <th>鍋島 純米吟醸</th>
+                            <td>1,150円</td>
+                        </tr>
+                        <tr>
+                            <th>東洋美人</th>
+                            <td>各種ご用意しております</td>
+                        </tr>
+                        <tr>
+                            <th>吉乃川一合</th>
+                            <td>800円</td>
+                        </tr>
+                        <tr>
+                            <th>吉乃川二合</th>
+                            <td>1,500円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="./images/limited-sake.jpg" rel="lightbox[]" title=""><img alt="日本酒（期間限定）"
+                        src="./images/limited-sake-s.jpg" width="180" height="120"></a>
+                <!-- <p class="note">※いろんな種類をお楽しみいただけますよう、無くなり次第終了の飲みきり商品です。</p>
+            </div>
+            <h3>日本酒</h3>
+            <div class="menu clear"> -->
+                <table cellspacing="0" cellpadding="0" border="0" summary="日本酒" class="largeLeft">
+                    <!-- <tr><th>東一 純米酒（一合）</th><td>800円</td></tr>
+                <tr><th>万齢 純米吟醸（一合）</th><td>950円</td></tr>
+                <tr><th>東洋美人 大辛口 純米吟醸（一合）</th><td>1,000円</td></tr>
+                <tr><th>吉乃川 辛口 一合（熱燗）</th><td>800円</td></tr>
+                <tr><th>岩の蔵 純米酒（一合）</th><td>800円</td></tr>
+                <tr><th>東洋美人 大辛口 純米大吟醸（一合）</th><td>1,500円</td></tr>
+                <tr><th>吉乃川 辛口 二合（熱燗）</th><td>1,500円</td></tr> -->
+                </table>
+                <a href="./images/sake.jpg" rel="lightbox[]" title=""><img alt="日本酒" src="./images/sake-s.jpg"
+                        width="180" height="120"></a>
+                <p class="note">※この他、オススメの日本酒を多数用意しております。</p>
+            </div>
+            <h3>ビール</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="ビール" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>生ビール(中) サントリープレミアムモルツ</th>
+                            <td>600円</td>
+                        </tr>
+                        <tr>
+                            <th>生ビール(小) サントリープレミアムモルツ</th>
+                            <td>450円</td>
+                        </tr>
+                        <tr>
+                            <th>瓶ビール(中) アサヒスーパードライ</th>
+                            <td>650円</td>
+                        </tr>
+                        <tr>
+                            <th>瓶ビール(中) キリンクラシックラガー</th>
+                            <td>650円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="./images/beer.jpg" rel="lightbox[]" title=""><img alt="ビール" src="./images/beer-s.jpg"
+                        width="120" height="185"></a>
+            </div>
+            <h3>ノンアルコールビール</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="ノンアルコールビール" class="largeLeft">
+                    <!-- <tr><th>アインベッカー（ドイツ産）</th><td>750円</td></tr> -->
+                    <tbody>
+                        <tr>
+                            <th>サントリーオールフリー</th>
+                            <td>450円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>焼酎（一合）</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="焼酎" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>黒丸（芋）</th>
+                            <td>900円</td>
+                        </tr>
+                        <tr>
+                            <th>黒一刻（芋）</th>
+                            <td>950円</td>
+                        </tr>
+                        <tr>
+                            <th>富乃宝山（芋）</th>
+                            <td>950円</td>
+                        </tr>
+                        <tr>
+                            <th>一粒の麦（麦）</th>
+                            <td>900円</td>
+                        </tr>
+                        <tr>
+                            <th>夢の一滴（芋）</th>
+                            <td>900円</td>
+                        </tr>
+                        <tr>
+                            <th>紅一刻（芋）</th>
+                            <td>950円</td>
+                        </tr>
+                        <tr>
+                            <th>吉兆宝山（芋）</th>
+                            <td>950円</td>
+                        </tr>
+                        <tr>
+                            <th>天草（米）</th>
+                            <td>900円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="./images/shochu.jpg" rel="lightbox[]" title=""><img alt="焼酎" src="./images/shochu-s.jpg"
+                        width="180" height="120"></a>
+            </div>
+            <h3>梅酒</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="梅酒" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>焙煎樽仕込み梅酒</th>
+                            <td>750円</td>
+                        </tr>
+                        <tr>
+                            <th>にごり梅酒</th>
+                            <td>750円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="./images/ume-liquor.jpg" rel="lightbox[]" title=""><img alt="梅酒"
+                        src="./images/ume-liquor-s.jpg" width="120" height="160"></a>
+            </div>
+            <h3>柚子酒</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="柚子酒" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>贅沢柚子酒</th>
+                            <td>750円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>ウイスキー</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="ウイスキー" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>山崎 12年</th>
+                            <td>900円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>シャンパン</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="シャンパン" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>アンリオ（ハーフ） 375ml</th>
+                            <td>6,000円</td>
+                        </tr>
+                        <tr>
+                            <th>アンリ・ジロー エスプリ ブリュット 750ml</th>
+                            <td>10,000円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="./images/champagne.jpg" rel="lightbox[]" title=""><img alt="シャンパン"
+                        src="./images/champagne-s.jpg" width="120" height="160"></a>
+            </div>
+            <h3>スパークリングワイン</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="スパークリングワイン" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>ラッツェンベルガー リースリングブリュット 750ml</th>
+                            <td>7,000円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>ロゼ</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="ロゼ" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>ロブレ モノ ロザエ 750ml</th>
+                            <td>5,000円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>グラスワイン</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="グラスワイン" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>白ワイン</th>
+                            <td>650円</td>
+                        </tr>
+                        <tr>
+                            <th>赤ワイン</th>
+                            <td>650円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <h3>白ワイン（750ml）</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="白ワイン" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>アルガブランカ クラレーザー</th>
+                            <td>4,500円</td>
+                        </tr>
+                        <tr>
+                            <th>シュタインマン シルヴァーナー</th>
+                            <td>4,500円</td>
+                        </tr>
+                        <tr>
+                            <th>ドメーヌ・ド・デリス ミュスカデ</th>
+                            <td>4,800円</td>
+                        </tr>
+                        <!-- <tr><th>セシェ ミュスカデ</th><td>4,800円</td></tr> -->
+                        <tr>
+                            <th>クメウ リバーヴィレッジ</th>
+                            <td>5,500円</td>
+                        </tr>
+                        <!-- <tr><th>ドッグポイント</th><td>6,500円</td></tr> -->
+                        <!-- <tr><th>バルバウニ オルヴィコート クラシコ</th><td>5,300円</td></tr> -->
+                        <tr>
+                            <th>ロブレ モノ ネルチェス シャルドネ</th>
+                            <td>6,000円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="./images/whitewine.jpg" rel="lightbox[]" title=""><img alt="白ワイン"
+                        src="./images/whitewine-s.jpg" width="160" height="120"></a>
+            </div>
+            <h3>赤ワイン（750ml）</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="赤ワイン" class="largeLeft">
+                    <!-- <tr><th>シャトーラ・グロレG</th><td>5,500円</td></tr>
+                <tr><th>フレデリック マニヤン ブルゴーニュ</th><td>5,500円</td></tr> -->
+                    <tbody>
+                        <tr>
+                            <th>エンリコ サンティエ ポッジオ アルモロ</th>
+                            <td>5,500円</td>
+                        </tr>
+                        <!-- <tr><th>ペタロス デル ピエルソ ホセ パラシオス ピエルソ</th><td>6,300円</td></tr> -->
+                        <tr>
+                            <th>スペルバウンド Mモンダヴィ メルロー</th>
+                            <td>4,500円</td>
+                        </tr>
+                        <tr>
+                            <th>ティボー リジェ ベレール ブルゴーニュ</th>
+                            <td>5,000円</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="./images/redwine.jpg" rel="lightbox[]" title=""><img alt="赤ワイン" src="./images/redwine-s.jpg"
+                        width="180" height="120"></a>
+            </div>
+            <h3>ソフトドリンク</h3>
+            <div class="menu clear">
+                <table cellspacing="0" cellpadding="0" border="0" summary="ソフトドリンク" class="largeLeft">
+                    <tbody>
+                        <tr>
+                            <th>ウーロン茶</th>
+                            <td>350円</td>
+                        </tr>
+                        <tr>
+                            <th>アップル
+                                <!-- 100% -->
+                            </th>
+                            <td>350円</td>
+                        </tr>
+                        <tr>
+                            <th>ジンジャーエール</th>
+                            <td>350円</td>
+                        </tr>
+                        <tr>
+                            <th>オレンジ
+                                <!-- 100% -->
+                            </th>
+                            <td>350円</td>
+                        </tr>
+                        <tr>
+                            <th>コーラ</th>
+                            <td>350円</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <p class="note">
+                ※お好きなコース料理にプラス2,000円で飲み放題（2時間）もできます。飲み放題のドリンクは、生ビール、日本酒（冷・熱燗）、焼酎（芋・麦・米）、梅酒
+                、柚子酒、ノンアルコールビール、ソフトドリンクに限らせていただきます。
+            </p>
+            <div class="att">※ 季節・仕入れにより、商品内容が変更になる場合がございますので、予め御了承ください。</div>
+            <div class="top_link">
+                <a href="#headerNavi"><img alt="TOPに戻る" src="../../images/common/top_link.gif" width="82"
+                        height="20"></a>
+            </div>
+        </div>
+    </div>
+</div>
